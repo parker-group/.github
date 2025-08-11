@@ -2,7 +2,7 @@
 
 **Spatial Epidemiology | Medical Geography | Earth Observation | Anthropology**
 
-We study the spatial and spatiotemporal dynamics of infectious diseases through **fieldwork**, **spatial analytics**, **anthropolgoy**, and **Earth observation**—and we share open tools and datasets for the wider research community.
+We study the spatial and spatiotemporal dynamics of infectious diseases through **fieldwork**, **spatial analytics**, **anthropology**, and **Earth observation**—sharing open tools and datasets for the wider research community.
 
 ---
 
@@ -35,7 +35,6 @@ We’re open to:
 - Spatial epi collaborations
 - Open-source spatial methods
 - EO + public health projects
-  
 
 📬 **[Contact information in CV (PDF)](https://github.com/parker-group/parker-group.github.io/raw/main/docs/ParkerCV.pdf)**
 
