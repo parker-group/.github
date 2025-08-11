@@ -13,12 +13,12 @@ We study the spatial and spatiotemporal dynamics of infectious diseases through 
 
 ---
 
-## 🛠 Featured Tools
+## 🛠 Featured Tools and Tutorials
 - [SDEtool](https://github.com/parker-group/SDEtool) – Standard Deviational Ellipse calculations in R.
 - [Variogram Tutorial](https://github.com/parker-group/variogram_tutorial1) – Intro to spatial dependence & variograms.
 - [Spatial Correlogram Tutorial](https://github.com/parker-group/spcorrelogram_tutorial1) – Moran’s I and Geary's C over distance classes.
 
-*See more in the [Public Overview → Methods & Tools section](https://github.com/parker-group/public-overview#methods--tools).*
+*See more in the [Public Overview document](https://github.com/parker-group/public-overview).*
 
 ---
 
@@ -26,7 +26,7 @@ We study the spatial and spatiotemporal dynamics of infectious diseases through 
 - [Dire Dawa Seroprevalence](https://github.com/parker-group/DireDawa_Seroepi)
 - [Night-time Lights & Conflict](https://github.com/parker-group/NTL_conflict)
 
-*More datasets in the [Public Overview → Data section](https://github.com/parker-group/public-overview).*
+*See more in the [Public Overview document](https://github.com/parker-group/public-overview).*
 
 ---
 
