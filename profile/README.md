@@ -9,7 +9,7 @@ We study the spatial and spatiotemporal dynamics of infectious diseases through 
 ## 🚀 Start Here
 
 - 🌐 **[Group Website](https://parker-group.github.io/)** — News, projects, publications, team.
-- 📜 **[Full Public Overview](https://github.com/parker-group/public-overview)** — All current and past projects, with descriptions and links.
+- 📜 **[Full Public Overview](https://github.com/parker-group/public-overview)** — Some current and past projects, with descriptions and links.
 
 ---
 
