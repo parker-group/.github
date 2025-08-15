@@ -43,7 +43,7 @@ We’re selective and question-driven. We say yes when a project has clear publi
 - What you hope our group adds + rough timeline  
 - Links to any prior or related work
 
-📬 **[Contact information in CV (PDF)](https://github.com/parker-group/parker-group.github.io/raw/main/docs/ParkerCV.pdf)**
+📬 **[Contact information in CV (PDF)](https://github.com/parker-group/parker-group.github.io/blob/main/docs/ParkerCV.pdf)**
 
 ---
 
