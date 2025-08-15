@@ -21,13 +21,13 @@ jobs:
         with:
           script: |
             const repos = [
+              "parker-group/public-overview"
+              "parker-group/NTL_conflict",
+              "parker-group/DireDawa_Seroepi",
+              "parker-group/Kinshasa_EO",
               "parker-group/SDEtool",
               "parker-group/parker-lab-values",
               "parker-group/parker-group.github.io",
-              "parker-group/NTL_conflict",
-              "parker-group/Kinshasa_EO",
-              "parker-group/DireDawa_Seroepi",
-              "parker-group/public-overview"
             ];
 
             // Optionally provide fallback descriptions if any repo has none
