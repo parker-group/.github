@@ -71,7 +71,7 @@ jobs:
             const table = header + "\n" + rows.join("\n") + "\n" + footer + "\n";
 
             const fs = require("fs");
-            const path = ".profile/README.md";
+            const path = "profile/README.md";
             let readme = fs.readFileSync(path, "utf8");
 
             // Replace content between markers
