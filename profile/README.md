@@ -13,15 +13,6 @@ We study the spatial and spatiotemporal dynamics of infectious diseases through 
 
 ---
 
-## 🛠 Featured Tools and Tutorials
-- [SDEtool](https://github.com/parker-group/SDEtool) – Standard Deviational Ellipse calculations in R.
-- [Variogram Tutorial](https://github.com/parker-group/variogram_tutorial1) – Intro to spatial dependence & variograms.
-- [Spatial Correlogram Tutorial](https://github.com/parker-group/spcorrelogram_tutorial1) – Moran’s I and Geary's C over distance classes.
-
-*See more in the [Public Overview document](https://github.com/parker-group/public-overview).*
-
----
-
 ## 📊 Featured Data
 - [Dire Dawa Seroprevalence](https://github.com/parker-group/DireDawa_Seroepi)
 - [Night-time Lights & Conflict](https://github.com/parker-group/NTL_conflict)
@@ -31,10 +22,26 @@ We study the spatial and spatiotemporal dynamics of infectious diseases through 
 ---
 
 ## 🤝 Collaborate
-We’re open to:
-- Spatial epi collaborations
-- Open-source spatial methods
-- EO + public health projects
+
+We’re selective and question-driven. We say yes when a project has clear public-health relevance or impact.
+
+**What gets us excited**
+- Disease ecology we know, in *new or marginalized* settings  
+- Humanitarian health with partners building research capacity  
+- Climate–infectious disease linkages  
+- Community-based interventions & access to care in neglected populations  
+- Thoughtful dynamics of human/vector movement; activity spaces; linking EO to people and places  
+
+**How we work**
+- Mostly international; growing U.S. portfolio  
+- Open science when safe; protect sensitive data  
+- Rigorous, plain-language analytics—jargon-light, map-friendly, mixed methods welcome  
+
+**Helpful context in your note (optional)**
+- The question and the **so what?**  
+- Who/where (population, partners) and what data exist  
+- What you hope our group adds + rough timeline  
+- Links to any prior or related work
 
 📬 **[Contact information in CV (PDF)](https://github.com/parker-group/parker-group.github.io/raw/main/docs/ParkerCV.pdf)**
 
