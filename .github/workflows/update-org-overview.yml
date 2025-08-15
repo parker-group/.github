@@ -21,7 +21,7 @@ jobs:
         with:
           script: |
             const repos = [
-              "parker-group/public-overview"
+              "parker-group/public-overview",
               "parker-group/NTL_conflict",
               "parker-group/DireDawa_Seroepi",
               "parker-group/Kinshasa_EO",
