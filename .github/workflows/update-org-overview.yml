@@ -1,0 +1,105 @@
+name: Update Org Overview Table
+
+on:
+  schedule:
+    - cron: "17 5 * * *"   # daily at 05:17 UTC
+  workflow_dispatch: {}     # allow manual runs
+
+permissions:
+  contents: write
+  # 'GITHUB_TOKEN' will be used; no PAT required.
+
+jobs:
+  refresh-table:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the .github repo
+        uses: actions/checkout@v4
+
+      - name: Build table and update README
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const repos = [
+              "parker-group/SDEtool",
+              "parker-group/parker-lab-values",
+              "parker-group/parker-group.github.io",
+              "parker-group/NTL_conflict",
+              "parker-group/Kinshasa_EO",
+              "parker-group/DireDawa_Seroepi",
+              "parker-group/public-overview"
+            ];
+
+            // Optionally provide fallback descriptions if any repo has none
+            const fallbacks = {
+              "parker-group/SDEtool": "R toolkit for standard deviational ellipses",
+              "parker-group/parker-lab-values": "Shared lab values, norms, and practices",
+              "parker-group/parker-group.github.io": "Group website (GitHub Pages)",
+              "parker-group/NTL_conflict": "Nighttime lights data with conflict overlays",
+              "parker-group/Kinshasa_EO": "Earth observation workflows for Kinshasa",
+              "parker-group/DireDawa_Seroepi": "Sero-epidemiology analysis for Dire Dawa",
+              "parker-group/public-overview": "Index of Parker Group projects & resources"
+            };
+
+            // Fetch metadata
+            const rows = [];
+            for (const full of repos) {
+              const [owner, repo] = full.split("/");
+              const { data } = await github.rest.repos.get({ owner, repo });
+              const name = data.name;
+              const html_url = data.html_url;
+              const desc = (data.description && data.description.trim()) || fallbacks[full] || "";
+              const pushed = new Date(data.pushed_at);
+              const yyyy = pushed.getUTCFullYear();
+              const mm = String(pushed.getUTCMonth() + 1).padStart(2, "0");
+              const dd = String(pushed.getUTCDate()).padStart(2, "0");
+              const dateStr = `${yyyy}-${mm}-${dd}`;
+              rows.push(`| [${name}](${html_url}) | ${desc} | ${dateStr} |`);
+            }
+
+            // Compose table
+            const header = [
+              "## Parker Group Projects",
+              "",
+              "<!-- REPO_TABLE_START -->",
+              "| Repository | Description | Last Updated |",
+              "|------------|-------------|--------------|",
+            ].join("\n");
+
+            const footer = "<!-- REPO_TABLE_END -->";
+
+            const table = header + "\n" + rows.join("\n") + "\n" + footer + "\n";
+
+            const fs = require("fs");
+            const path = ".github/profile/README.md";
+            let readme = fs.readFileSync(path, "utf8");
+
+            // Replace content between markers
+            const start = "<!-- REPO_TABLE_START -->";
+            const end = "<!-- REPO_TABLE_END -->";
+            const regex = new RegExp(`${start}[\\s\\S]*?${end}`);
+            if (!regex.test(readme)) {
+              core.setFailed("Markers <!-- REPO_TABLE_START --> and <!-- REPO_TABLE_END --> not found in README.");
+              return;
+            }
+
+            const newReadme = readme.replace(regex, table.split("\n").slice(2).join("\n")); // keep header above table intact
+
+            if (newReadme !== readme) {
+              fs.writeFileSync(path, newReadme);
+              core.info("README updated with fresh repo table.");
+            } else {
+              core.info("No changes needed.");
+            }
+
+      - name: Commit changes (if any)
+        run: |
+          if [[ -n "$(git status --porcelain)" ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add .github/profile/README.md
+            git commit -m "chore(profile): refresh org repo table"
+            git push
+          else
+            echo "No changes to commit."
+          fi
