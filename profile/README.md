@@ -23,12 +23,17 @@ We study the spatial and spatiotemporal dynamics of infectious diseases through 
 
 ## Repository Overview
 
+<!-- REPO_TABLE_START -->
 | Repository | Description | Last Updated |
 |------------|-------------|--------------|
-| [spatial-epidemiology-hub](https://github.com/DMParker1/spatial-epidemiology-hub) | Umbrella hub linking spatial epi tools & field projects | 2025-08-15 |
-| [SDEtool](https://github.com/DMParker1/SDEtool) | R toolkit for computing standard deviational ellipses | 2025-08-14 |
-| [earth-observation-hub](https://github.com/DMParker1/earth-observation-hub) | Remote sensing workflows for vector & disease mapping | 2025-08-13 |
-| [activity-spaces](https://github.com/DMParker1/activity-spaces) | Methods for defining and analyzing human activity spaces | 2025-08-15 |
+| [SDEtool](https://github.com/parker-group/SDEtool) |  |  |
+| [parker-lab-values](https://github.com/parker-group/parker-lab-values) |  |  |
+| [parker-group.github.io](https://github.com/parker-group/parker-group.github.io) |  |  |
+| [NTL_conflict](https://github.com/parker-group/NTL_conflict) |  |  |
+| [Kinshasa_EO](https://github.com/parker-group/Kinshasa_EO) |  |  |
+| [DireDawa_Seroepi](https://github.com/parker-group/DireDawa_Seroepi) |  |  |
+| [public-overview](https://github.com/parker-group/public-overview) |  |  |
+<!-- REPO_TABLE_END -->
 
 
 
