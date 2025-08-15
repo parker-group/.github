@@ -21,6 +21,17 @@ We study the spatial and spatiotemporal dynamics of infectious diseases through 
 
 ---
 
+## Repository Overview
+
+| Repository | Description | Last Updated |
+|------------|-------------|--------------|
+| [spatial-epidemiology-hub](https://github.com/DMParker1/spatial-epidemiology-hub) | Umbrella hub linking spatial epi tools & field projects | 2025-08-15 |
+| [SDEtool](https://github.com/DMParker1/SDEtool) | R toolkit for computing standard deviational ellipses | 2025-08-14 |
+| [earth-observation-hub](https://github.com/DMParker1/earth-observation-hub) | Remote sensing workflows for vector & disease mapping | 2025-08-13 |
+| [activity-spaces](https://github.com/DMParker1/activity-spaces) | Methods for defining and analyzing human activity spaces | 2025-08-15 |
+
+
+
 ## 🤝 Collaborate
 
 We’re selective and question-driven. We say yes when a project has clear public-health relevance or impact.
