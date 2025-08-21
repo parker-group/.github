@@ -22,6 +22,8 @@ We study the spatial and spatiotemporal dynamics of infectious diseases through 
 ---
 
 ## Repository Overview
+*this is only a selection of our repos. See more in the [Public Overview document](https://github.com/parker-group/public-overview).*
+
 
 <!-- REPO_TABLE_START -->
 | Repository | Description | Last Updated |
