@@ -34,8 +34,9 @@ We study the spatial and spatiotemporal dynamics of infectious diseases through 
 | [Kinshasa_EO](https://github.com/parker-group/Kinshasa_EO) | Kinshasa Earth Observation data/analysis | 2025-08-24 |
 | [SDEtool](https://github.com/parker-group/SDEtool) | tool to generate standard deviational ellipses in R | 2025-08-22 |
 | [parker-lab-values](https://github.com/parker-group/parker-lab-values) | living document describing lab values, expectations, and general culture | 2025-08-20 |
-| [parker-group.github.io](https://github.com/parker-group/parker-group.github.io) | Parker Group webpage | 2025-09-22 |
+| [parker-group.github.io](https://github.com/parker-group/parker-group.github.io) | Parker Group webpage | 2025-11-16 |
 <!-- REPO_TABLE_END -->
+
 
 
 
