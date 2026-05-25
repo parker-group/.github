@@ -13,6 +13,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+
   refresh-table:
 
     runs-on: ubuntu-latest
@@ -21,6 +22,8 @@ jobs:
 
       - name: Check out the .github repo
         uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
 
       - name: Build table and update README
         uses: actions/github-script@v8
