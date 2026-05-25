@@ -8,12 +8,12 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: refresh-org-table
+  cancel-in-progress: true
+
 jobs:
   refresh-table:
-
-    concurrency:
-      group: refresh-org-table
-      cancel-in-progress: true
 
     runs-on: ubuntu-latest
 
@@ -162,7 +162,7 @@ jobs:
             ) {
 
               core.setFailed(
-                "Markers not found in README."
+                "Markers <!-- REPO_TABLE_START --> and <!-- REPO_TABLE_END --> not found in README."
               );
 
               return;
@@ -188,7 +188,7 @@ jobs:
               );
 
               core.info(
-                "README updated."
+                "README updated with fresh repo table."
               );
 
             } else {
@@ -216,38 +216,9 @@ jobs:
             git commit \
               -m "chore(profile): refresh org repo table"
 
-            success=false
+            git pull --rebase origin main
 
-            for i in {1..3}; do
-
-              git pull \
-                --rebase \
-                origin \
-                main
-
-              if git push origin main; then
-
-                success=true
-
-                break
-
-              fi
-
-              echo \
-                "Push failed attempt $i of 3"
-
-              sleep 10
-
-            done
-
-            if [ "$success" = false ]; then
-
-              echo \
-                "Push failed after retries"
-
-              exit 1
-
-            fi
+            git push origin main
 
           else
 
