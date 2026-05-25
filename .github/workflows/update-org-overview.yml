@@ -7,13 +7,18 @@ on:
 
 permissions:
   contents: write
-  # 'GITHUB_TOKEN' will be used; no PAT required.
 
 jobs:
   refresh-table:
+
+    concurrency:
+      group: refresh-org-table
+      cancel-in-progress: true
+
     runs-on: ubuntu-latest
 
     steps:
+
       - name: Check out the .github repo
         uses: actions/checkout@v5
 
@@ -22,6 +27,7 @@ jobs:
 
         with:
           script: |
+
             const repos = [
               "parker-group/public-overview",
               "parker-group/NTL_conflict",
@@ -33,34 +39,59 @@ jobs:
             ];
 
             const fallbacks = {
-              "parker-group/SDEtool": "R toolkit for standard deviational ellipses",
-              "parker-group/parker-lab-values": "Shared lab values, norms, and practices",
-              "parker-group/parker-group.github.io": "Group website (GitHub Pages)",
-              "parker-group/NTL_conflict": "Nighttime lights data with conflict overlays",
-              "parker-group/Kinshasa_EO": "Earth observation workflows for Kinshasa",
-              "parker-group/DireDawa_Seroepi": "Sero-epidemiology analysis for Dire Dawa",
-              "parker-group/public-overview": "Index of Parker Group projects & resources"
+              "parker-group/SDEtool":
+                "R toolkit for standard deviational ellipses",
+
+              "parker-group/parker-lab-values":
+                "Shared lab values, norms, and practices",
+
+              "parker-group/parker-group.github.io":
+                "Group website (GitHub Pages)",
+
+              "parker-group/NTL_conflict":
+                "Nighttime lights data with conflict overlays",
+
+              "parker-group/Kinshasa_EO":
+                "Earth observation workflows for Kinshasa",
+
+              "parker-group/DireDawa_Seroepi":
+                "Sero-epidemiology analysis for Dire Dawa",
+
+              "parker-group/public-overview":
+                "Index of Parker Group projects & resources"
             };
 
             const rows = [];
 
             for (const full of repos) {
 
-              const [owner, repo] = full.split("/");
+              const [owner, repo] =
+                full.split("/");
 
               const { data } =
-                await github.rest.repos.get({ owner, repo });
+                await github.rest.repos.get({
+                  owner,
+                  repo
+                });
 
-              const name = data.name;
-              const html_url = data.html_url;
+              const name =
+                data.name;
+
+              const html_url =
+                data.html_url;
 
               const desc =
-                (data.description &&
-                 data.description.trim()) ||
+                (
+                  data.description &&
+                  data.description.trim()
+                ) ||
                 fallbacks[full] ||
                 "";
 
-              const pushed = new Date(data.pushed_at);
+              const pushed =
+                new Date(
+                  data.pushed_at
+                );
 
               const yyyy =
                 pushed.getUTCFullYear();
@@ -126,10 +157,12 @@ jobs:
                 `${start}[\\s\\S]*?${end}`
               );
 
-            if (!regex.test(readme)) {
+            if (
+              !regex.test(readme)
+            ) {
 
               core.setFailed(
-                "Markers <!-- REPO_TABLE_START --> and <!-- REPO_TABLE_END --> not found in README."
+                "Markers not found in README."
               );
 
               return;
@@ -145,7 +178,9 @@ jobs:
                   .join("\n")
               );
 
-            if (newReadme !== readme) {
+            if (
+              newReadme !== readme
+            ) {
 
               fs.writeFileSync(
                 path,
@@ -153,7 +188,7 @@ jobs:
               );
 
               core.info(
-                "README updated with fresh repo table."
+                "README updated."
               );
 
             } else {
@@ -185,6 +220,11 @@ jobs:
 
             for i in {1..3}; do
 
+              git pull \
+                --rebase \
+                origin \
+                main
+
               if git push origin main; then
 
                 success=true
@@ -194,7 +234,7 @@ jobs:
               fi
 
               echo \
-                "Push failed (attempt $i of 3). Retrying in 10 seconds..."
+                "Push failed attempt $i of 3"
 
               sleep 10
 
