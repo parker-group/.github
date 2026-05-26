@@ -32,7 +32,7 @@ We study the spatial and spatiotemporal dynamics of infectious diseases through 
 | [NTL_conflict](https://github.com/parker-group/NTL_conflict) | Data and code for work assessing nighttime lights as a tool for measuring conflict in Yemen and Ukraine. | 2026-04-18 |
 | [DireDawa_Seroepi](https://github.com/parker-group/DireDawa_Seroepi) | data repository for the seroprevalence survey in Dire Dawa in 2024 | 2026-03-08 |
 | [Kinshasa_EO](https://github.com/parker-group/Kinshasa_EO) | Kinshasa Earth Observation data/analysis | 2025-08-24 |
-| [SDEtool](https://github.com/parker-group/SDEtool) | tool to generate standard deviational ellipses in R | 2026-05-25 |
+| [SDEtool](https://github.com/parker-group/SDEtool) | tool to generate standard deviational ellipses in R | 2026-05-26 |
 | [parker-lab-values](https://github.com/parker-group/parker-lab-values) | living document describing lab values, expectations, and general culture | 2025-08-20 |
 | [parker-group.github.io](https://github.com/parker-group/parker-group.github.io) | Parker Group webpage | 2026-05-25 |
 <!-- REPO_TABLE_END -->
