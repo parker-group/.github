@@ -28,13 +28,13 @@ We study the spatial and spatiotemporal dynamics of infectious diseases through 
 <!-- REPO_TABLE_START -->
 | Repository | Description | Last Updated |
 |------------|-------------|--------------|
-| [public-overview](https://github.com/parker-group/public-overview) | Overview of public resources from the Parker Group | 2025-10-18 |
+| [public-overview](https://github.com/parker-group/public-overview) | Overview of public resources from the Parker Group | 2026-06-07 |
 | [NTL_conflict](https://github.com/parker-group/NTL_conflict) | Data and code for work assessing nighttime lights as a tool for measuring conflict in Yemen and Ukraine. | 2026-04-18 |
 | [DireDawa_Seroepi](https://github.com/parker-group/DireDawa_Seroepi) | data repository for the seroprevalence survey in Dire Dawa in 2024 | 2026-03-08 |
-| [Kinshasa_EO](https://github.com/parker-group/Kinshasa_EO) | Kinshasa Earth Observation data/analysis | 2025-08-24 |
+| [Kinshasa_EO](https://github.com/parker-group/Kinshasa_EO) | Kinshasa Earth Observation data/analysis | 2026-06-07 |
 | [SDEtool](https://github.com/parker-group/SDEtool) | tool to generate standard deviational ellipses in R | 2026-05-26 |
 | [parker-lab-values](https://github.com/parker-group/parker-lab-values) | living document describing lab values, expectations, and general culture | 2025-08-20 |
-| [parker-group.github.io](https://github.com/parker-group/parker-group.github.io) | Parker Group webpage | 2026-05-29 |
+| [parker-group.github.io](https://github.com/parker-group/parker-group.github.io) | Parker Group webpage | 2026-06-07 |
 <!-- REPO_TABLE_END -->
 
 
