@@ -13,11 +13,14 @@ We study the spatial and spatiotemporal dynamics of infectious diseases through 
 
 ---
 
-## 📊 Featured Data
-- [Dire Dawa Seroprevalence](https://github.com/parker-group/DireDawa_Seroepi)
-- [Night-time Lights & Conflict](https://github.com/parker-group/NTL_conflict)
+## 🧰 Featured Open Resources
 
-*See more in the [Public Overview document](https://github.com/parker-group/public-overview).*
+- [Earth Observation How-To](https://github.com/parker-group/earth-observation-howto) — Practical tutorials and workflows for Earth observation and geospatial data.
+- [SDEtool](https://github.com/parker-group/SDEtool) — R tools for calculating and visualizing standard deviational ellipses.
+- [Dire Dawa Seroepidemiology](https://github.com/parker-group/DireDawa_Seroepi) — Reproducible research materials from seroepidemiological work in Ethiopia.
+- [Night-time Lights & Conflict](https://github.com/parker-group/NTL_conflict) — Reproducible workflows using nighttime lights in conflict-affected settings.
+
+See more in the [Public Overview](https://github.com/parker-group/public-overview).
 
 ---
 
