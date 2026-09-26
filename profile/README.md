@@ -37,7 +37,7 @@ See more in the [Public Overview](https://github.com/parker-group/public-overvie
 | [Kinshasa_EO](https://github.com/parker-group/Kinshasa_EO) | Kinshasa Earth Observation data/analysis | 2026-08-09 |
 | [SDEtool](https://github.com/parker-group/SDEtool) | tool to generate standard deviational ellipses in R | 2026-05-26 |
 | [parker-lab-values](https://github.com/parker-group/parker-lab-values) | living document describing lab values, expectations, and general culture | 2026-09-22 |
-| [parker-group.github.io](https://github.com/parker-group/parker-group.github.io) | Parker Group webpage | 2026-08-23 |
+| [parker-group.github.io](https://github.com/parker-group/parker-group.github.io) | Parker Group webpage | 2026-09-26 |
 <!-- REPO_TABLE_END -->
 
 
