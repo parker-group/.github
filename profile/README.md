@@ -2,7 +2,7 @@
 
 **Spatial Epidemiology | Medical Geography | Earth Observation | Anthropology**
 
-We study the spatial and spatiotemporal dynamics of infectious diseases through **fieldwork**, **spatial analytics**, **anthropology**, and **Earth observation**.
+We study the spatial and spatiotemporal dimensions of health, including infectious disease, environmental exposures, and access to healthcare, through **fieldwork**, **spatial analytics**, **anthropology**, and **Earth observation**.
 
 ---
 
